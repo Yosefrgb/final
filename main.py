@@ -30,7 +30,7 @@ lm35_Pin.width(ADC.WIDTH_10BIT)
  
  
 def off():
-    for luz in [peatonal1verde,peatonal2verde,peatonal3verde,vehicular4amarillo,vehicular5verde,vehicular6verde,peatonal1rojo,peatonal2rojo,peatonal3rojo,vehicular4rojo,vehicular5rojo,vehicular6rojo]:
+    for luz in [peatonal1verde,peatonal2verde,peatonal3verde,vehicular4amarillo,vehicular5verde,vehicular6verde,peatonal1rojo,peatonal2rojo,peatonal3rojo,vehicular4rojo,vehicular5rojo,vehicular6rojo,vehicular5amarillo,vehicular6amarillo]:
         luz.off()
         luz.value(0)
  
@@ -69,37 +69,37 @@ while True:
     else:
             mem32[GPIO_SET]=0b00010010011000110000000000000
             sleep(6.8)
+            mem32[GPIO_SET]=0b00010000010000110000000000000
+            sleep(0.5)
+            mem32[GPIO_SET]=0b00010010011000110000000000000
+            sleep(0.5)
             mem32[GPIO_SET]=0b00010000010000110000000010000
-            sleep(0.5)
-            mem32[GPIO_SET]=0b00010010010000110000000010000
-            sleep(0.5)
-            mem32[GPIO_SET]=0b00010000010000110000000000000
             sleep(0.3)
             mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.3)
-            mem32[GPIO_SET]=0b00010000010000110000000000000
+            mem32[GPIO_SET]=0b00010000010000110000000010000
             sleep(0.2)
             mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.2)
-            mem32[GPIO_SET]=0b00010000010000110000000000000
+            mem32[GPIO_SET]=0b00010000010000110000000010000
             sleep(0.1)
             mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.1)
             mem32[GPIO_SET]=0b00100100010000101000000100000
             sleep(6.8)
+            mem32[GPIO_SET]=0b00100000000000101000000000000
+            sleep(0.5)
+            mem32[GPIO_SET]=0b00100100010000101000000100000
+            sleep(0.5)
             mem32[GPIO_SET]=0b00100000000010101000000000000
-            sleep(0.5)
-            mem32[GPIO_SET]=0b00100100010010101000000000000
-            sleep(0.5)
-            mem32[GPIO_SET]=0b00100000000000101000000000000
             sleep(0.3)
             mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.3)
-            mem32[GPIO_SET]=0b00100000000000101000000000000
+            mem32[GPIO_SET]=0b00100000000010101000000000000
             sleep(0.2)
             mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.2)
-            mem32[GPIO_SET]=0b00100000000000101000000000000
+            mem32[GPIO_SET]=0b00100000000010101000000000000
             sleep(0.1)
             mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.1)
