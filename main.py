@@ -9,6 +9,8 @@ peatonal3verde=Pin(21,Pin.OUT)
 vehicular4amarillo=Pin(19,Pin.OUT)
 vehicular5verde=Pin(18,Pin.OUT)
 vehicular6verde=Pin(5,Pin.OUT)
+vehicular6amarillo=Pin(16,Pin.OUT)
+vehicular5amarillo=Pin(4,Pin.OUT)
 peatonal1rojo=Pin(13,Pin.OUT)
 peatonal2rojo=Pin(12,Pin.OUT)
 peatonal3rojo=Pin(14,Pin.OUT)
@@ -67,57 +69,57 @@ while True:
     else:
             mem32[GPIO_SET]=0b00010010011000110000000000000
             sleep(6.8)
-            mem32[GPIO_SET]=0b00010000010000110000000000000
+            mem32[GPIO_SET]=0b00010000010000110000000010000
             sleep(0.5)
-            mem32[GPIO_SET]=0b00010010011000110000000000000
+            mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.5)
             mem32[GPIO_SET]=0b00010000010000110000000000000
             sleep(0.3)
-            mem32[GPIO_SET]=0b00010010011000110000000000000
+            mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.3)
             mem32[GPIO_SET]=0b00010000010000110000000000000
             sleep(0.2)
-            mem32[GPIO_SET]=0b00010010011000110000000000000
+            mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.2)
             mem32[GPIO_SET]=0b00010000010000110000000000000
             sleep(0.1)
-            mem32[GPIO_SET]=0b00010010011000110000000000000
+            mem32[GPIO_SET]=0b00010010010000110000000010000
             sleep(0.1)
             mem32[GPIO_SET]=0b00100100010000101000000100000
             sleep(6.8)
-            mem32[GPIO_SET]=0b00100000000000101000000000000
+            mem32[GPIO_SET]=0b00100000000010101000000000000
             sleep(0.5)
-            mem32[GPIO_SET]=0b00100100010000101000000100000
+            mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.5)
             mem32[GPIO_SET]=0b00100000000000101000000000000
             sleep(0.3)
-            mem32[GPIO_SET]=0b00100100010000101000000100000
+            mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.3)
             mem32[GPIO_SET]=0b00100000000000101000000000000
             sleep(0.2)
-            mem32[GPIO_SET]=0b00100100010000101000000100000
+            mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.2)
             mem32[GPIO_SET]=0b00100000000000101000000000000
             sleep(0.1)
-            mem32[GPIO_SET]=0b00100100010000101000000100000
+            mem32[GPIO_SET]=0b00100100010010101000000000000
             sleep(0.1)
  
             if b_pare==1:
                 mem32[GPIO_SET]=0b01110111000000000000000000000
                 sleep(4.8)
-                mem32[GPIO_SET]=0b01110000000000000000000000000
+                mem32[GPIO_SET]=0b01110010000000000000000000000
                 sleep(0.5)
                 mem32[GPIO_SET]=0b01110111000000000000000000000
                 sleep(0.5)
-                mem32[GPIO_SET]=0b01110000000000000000000000000
+                mem32[GPIO_SET]=0b01110010000000000000000000000
                 sleep(0.3)
                 mem32[GPIO_SET]=0b01110111000000000000000000000
                 sleep(0.3)
-                mem32[GPIO_SET]=0b01110000000000000000000000000
+                mem32[GPIO_SET]=0b01110010000000000000000000000
                 sleep(0.2)
                 mem32[GPIO_SET]=0b01110111000000000000000000000
                 sleep(0.2)
-                mem32[GPIO_SET]=0b01110000000000000000000000000
+                mem32[GPIO_SET]=0b01110010000000000000000000000
                 sleep(0.1)
                 mem32[GPIO_SET]=0b01110111000000000000000000000
                 sleep(0.1)
